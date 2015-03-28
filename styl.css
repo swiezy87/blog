@@ -1,0 +1,278 @@
+/* My entry to the "fall"(Autumn) OSWD contest */
+
+body { margin: 0; padding: 0; text-align: center; background: #eee}
+
+
+/* Below:  All these are global styles applied to everything.  However, they can be overwritten later in the CSS */
+* {margin: 0; padding: 0; border: 0; text-align: left; font-family: Verdana, Arial, sans-serif; font-size: 11px; line-height: 18px; color: #999 }
+
+
+/* main nav */
+
+
+/* Layout */
+
+#container { /* the container contains all the divs and makes sure they are centrally aligned.  Note that IE uses the text-align: center; in the body to align everything centrally */
+	margin: 0 auto; 
+	width: 770px; 
+	background: url('images/hdr.gif') no-repeat top left;
+	}
+
+#navarea { width: 770px; height: 50px; background: transparent } /* This div allows an area for the main navigation tabs */
+
+#hdr {  /* header/banner area */
+	width: 770px;
+	height: 125px;
+	background:  transparent
+}
+
+#lftcol {  /* left column showing the extra info on the left side of the main column */
+	float: left;
+	width: 200px;
+	background: transparent
+}
+
+#maincol {  /* main column where the main text etc is located */
+	float: right;
+	width: 570px;
+	background: #1C44BC
+}
+
+#bttmbar {  /* bottom bar houses the copyright information and the bottom navigation */
+	margin-bottom: 20px;
+	float: right;
+	width: 570px;
+	height: 30px;
+	background: url('images/bttm.gif') no-repeat #1C44BC; /* Adds the rounded corner image to the bottom */
+	overflow: hidden
+}
+
+#bttmbar span#copyright {   /*styles for the copyright text */
+	margin-left: 10px;
+	float: left;
+	line-height: 30px;
+	text-align: right;
+	font-size: 9px; 
+	color: #6488F7;
+}
+
+/* Text styles */
+
+/* Below is the style for the main site title */
+
+
+#sitetitle { /* Styles for the main site title */
+	position: relative;
+	top: 20px;  /* shifts text into exact position */
+	left: 475px;  /* shifts text into exact position */
+	font-family: Georgia, serif; 
+	font-size: 36px; 
+	line-height: 40px;
+	font-weight: 100;  /* 100 is the thinnest font weight */
+	color: #FF9933; /* nice light orange "autumn" type colour */
+	letter-spacing: 8px /* spaces out the letters a bit */
+	}
+	
+#subtitle {  /* Styles for the sites subtitle */
+	position: relative;
+	top: 24px;  /* shifts text into exact position */
+	left: 475px;  /* shifts text into exact position */
+	font-size: 12px; 
+	font-weight: normal;
+	line-height: 18px;
+	color: #6488F7;
+	letter-spacing: 3px /* spaces out the letters a bit */
+	}
+	
+#subtitle a {   /* Styles for any links in the sub title */
+	font-size: 12px; 
+	font-weight: normal;
+	line-height: 18px;
+	color: #6488F7;
+	letter-spacing: 3px; /* spaces out the letters a bit */
+	text-decoration: none;
+	border-bottom: 1px dashed #496FE4;
+}
+	
+#subtitle a:hover {   /* Styles for any links in the sub title, hover state */
+	color: #FFF000; 
+	text-decoration: none;
+	border-bottom: 1px dashed #FFF000;
+	}
+
+#maincol p { color: #C5CEE7; margin: 5px 40px 5px 145px; letter-spacing: 0px }  /* paragraph text in the main column */
+
+#maincol h1,h2 {    /* Styles for the main column headers */
+	margin: 15px 10px 5px 25px; 
+	font-family: Georgia, serif; 
+	font-size: 17px; 
+	font-weight: 100; 
+	line-height: 19px; 
+	color: #FF9933; 
+	letter-spacing: 2px
+	 }  /* headings in the main column */
+
+#maincol .date {    /* These are the styles for the blog dates */
+	margin-left: 25px; 
+	font-size: 9px; 
+	color: #6488F7;
+	letter-spacing: 1px
+}
+
+#maincol a:link, #maincol a:visited {   /* These are the styles for the Main column links */
+	padding-left: 11px;
+	color: #EA6059;
+	text-decoration: none;
+	text-align: left;
+	background: url('images/linkarrow.gif') no-repeat 0% 140%;
+}
+
+#maincol a:hover, #maincol a:active {   /* These are the styles for the Main column links */
+	padding-left: 11px;
+	color: #FFF000;
+	text-decoration: none;
+	text-align: left;
+	background: url('images/linkarrow.gif') no-repeat 0% -80%;
+}
+
+#lftcol a:link, #lftcol a:visited {   /* These are the styles for the left column links */
+	padding-left: 11px;
+	color: #fff;
+	text-decoration: none;
+	text-align: left;
+	background: url('images/lftlinkarrow.gif') no-repeat 0% 140%;
+}
+	
+#lftcol a:hover, #lftcol a:active {    /* These are the styles for the left column links */
+	padding-left: 11px;
+	color: #FFF000;
+	text-decoration: none;
+	text-align: left;
+	background: url('images/lftlinkarrow.gif') no-repeat 0% -80%;
+}
+	
+	
+.leftcolbox h1,h2,h3 {   /* Titles in the left column */
+	font-family: Verdana, Arial, sans-serif;
+	margin: 0 15px 12px 15px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 0;
+	font-size: 11px;
+	line-height: 14px;	
+}
+
+/* Main Nav */
+
+#nav   /* Main nav */
+{
+	float: right;
+	margin-top: 27px;
+	white-space: nowrap;
+}
+
+#nav li  /* Main nav list items */
+{
+	font-size: 10px;
+	float: left;
+	list-style: none;
+	line-height: 21px; /* height of the tab */
+	text-align: center
+}
+
+#nav a {   /* Main nav styles for all links */
+	font-size: 10px;
+	padding-left: 12px;
+	display: block; /* Although a block suggests a vertical list, the float: right; property under #nav li causes the menu to float to an inline position */
+	margin-right: 5px;
+	width: 55px; 
+	height: 21px;
+	line-height: 21px; /* height of the tab */
+	text-decoration: none;
+	 }
+
+#nav a:link, #nav a:visited  /* Main nav link and visited states */
+{
+	color: #1C44BC; 
+	border-bottom: 2px solid #8599D4;
+	background: url('images/toplinkbullet.gif') no-repeat 2% 60% #B2C2F4; 
+}
+
+#nav a:hover, #nav a:active /* Main nav hover and active states */
+{
+	color: #FFF000; 
+	border-bottom: 2px solid #1C44BC;
+	background: url('images/toplinkbullet2.gif') no-repeat 2% 60% #1C44BC;
+}
+
+/* Other styles */
+
+div.rule {  /* Rules - blowing leaves that separate blog items */
+	margin: 0 0 20px 0;
+	width: 570px;
+	height: 50px;
+	background: url('images/leafrule.gif');
+	border: 0;
+}
+
+div.leftcolbox {  /* Use this to create one of the boxes in the left column */
+	padding: 0 0 0px 0;
+	margin: 15px;
+	width: 170px;
+	background: url('images/leftboxbottom.gif') no-repeat bottom #B0B21F;
+	overflow: hidden;
+	}
+	
+div.leftcolboxtop { /* This div adds the top rounded corners of the box.  The bottom is included in the leftcolbox div as the background image */
+	height: 10px;
+	width: 170px;
+	background: url('images/leftboxtop.gif') no-repeat top;
+}
+	
+.leftcolbox p {   /* text style for left col boxes */
+	margin: 0 15px 12px 15px;
+	font-size: 11px;
+	line-height: 16px;
+	color: #fff;
+}
+
+.leftcolbox img { /* Styles for images in the left column boxes */
+	margin: 0 auto;
+}
+
+acronym {  /* Acronyms are hovered over to reveal their meaning e.g. OSWD = Open Source Web Design */ 
+	color: #ccc;
+	border-bottom: 1px dashed #ccc;
+	cursor: help;  /* To make cursor appear as a help question mark/arrow  */
+}
+
+/* Bottom Nav */
+
+#bttmnav { float: right; margin-right: 10px }
+#bttmnav li {display: inline; font-weight: normal;}
+#bttmnav a {  padding-left: 10px; font-size: 9px; line-height: 30px; }
+#bttmnav a:link, #bttmnav a:visited { color: #6488F7; }
+#bttmnav a:hover, #bttmnav a:active { text-decoration: none; color: #6488F7; }
+
+/* Normal lists */
+
+
+#maincol ul {   /* styles main area unordered(bulleted) lists */
+	margin-top: 15px; /* This margin is the top margin of the WHOLE list, hence why it is specified in ul and not li */
+	margin-bottom: 15px; /* This margin is the bottom margin of the WHOLE list, hence why it is specified in ul and not li */
+	margin-left: 150px; /* This margin is the bottom margin of the WHOLE list, hence why it is specified in ul and not li */
+	list-style: square /* This controls the bullet point style. */
+}
+
+#maincol li {  /* List items in the main column */
+	color: #C5CEE7;
+	margin-left: 10px /* This margin acts as an indent for each list item.  Indenting the whole list doesn't work well in IE. */
+}
+
+#maincol ol {   /* styles main area ordered(numbered) lists */
+  margin-top: 15px; 
+  margin-bottom: 15px; 
+  font-size: 0.7em;
+  line-height: 1.5em;
+  list-style-type:  decimal
+ }
